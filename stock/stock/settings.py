@@ -80,8 +80,8 @@ DATABASES = {
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'NAME': 'stock',
         'USER': 'root',
-        'HOST': '144.202.114.229',
-        'PASSWORD': 'password',
+        'HOST': '127.0.0.1',
+        'PASSWORD': 'labradors',
         'PORT': 3306,
         'OPTIONS': {'charset':'utf8mb4'},
     }
