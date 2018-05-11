@@ -6,7 +6,7 @@
 # https://doc.scrapy.org/en/latest/topics/items.html
 
 import scrapy
-from spider.models import ShopInfo, ReviewDedail, ShopId
+from spider.models import ShopInfo, ReviewDedail, ShopId,Quote
 from scrapy_djangoitem import DjangoItem
 
 
@@ -26,3 +26,7 @@ class ReviewDetailItem(DjangoItem):
 
 class ShopIdItem(DjangoItem):
     django_model = ShopId
+
+
+class QuoteItem(DjangoItem):
+    django_model = Quote

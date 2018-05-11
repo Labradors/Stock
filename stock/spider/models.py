@@ -41,3 +41,9 @@ class ReviewDedail(models.Model):
     star_1 = models.CharField(max_length=20, null=True)
     first_review_time = models.CharField(max_length=100, null=True)
     first_review_content = models.TextField(null=True)
+
+
+class Quote(models.Model):
+    id = models.AutoField(max_length=20, primary_key=True)
+    author = models.CharField(max_length=20, null=False)
+    text = models.CharField(max_length=1000, null=True)
